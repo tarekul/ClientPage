@@ -32,6 +32,7 @@
 </head>
 <body>
 	<?php
+	
 	echo "<img src=http://www.clker.com/cliparts/T/S/B/Y/j/1/client.svg height=120 height=120  />";
 	
 	echo
@@ -42,21 +43,41 @@
 		</tr>
 
 	</table>";
-	echo "<nav>
-		<input type=submit value=Home>
-		<input type=submit value=Browse Products>
-		<input type=submit value=Transaction History>
-		<input type=submit value=Search Salesperson>
-		<input type=submit value=Rate Salesperson>
-	</nav>";
+	echo '<nav style="height:42px">';
+		echo '<form action="BrowseProduct.php" method="post" style="position:absolute;">';
+		echo '<input type="submit" value="Browse Products" style="height:40px">';
+		echo '</form>';
+
+		echo '<form action="TransactionHistory.php" method="post" style="position:absolute;left:180px">';
+		echo '<input type="submit" value="Transaction History" style="height:40px">';
+		echo '</form>';
+
+		echo '<form action="SearchSalesperson.php" method="post" style="position:absolute;left:365px">';
+		echo '<input type="submit" value="Search Salesperson" style="height:40px">';
+		echo '</form>';
+
+		echo '<form action="RateSalesperson.php" method="post" style="width:193px;position:absolute;left:545px">';
+		echo '<input type="submit" value="Rate Salesperson" style="height:40px">';
+		echo '</form>';
+	echo "</nav>";
 	
-	echo "<br>";
+	echo '<form action="BrowseProduct.php" method="post" style="width=171px;height:191px"">';
+	echo '<br>';
 	echo '<input type="submit" value="Browse Products" style="margin-top:40px; margin-right:170px; margin-bottom:40px; height:100px">';
-	echo '<input type="submit" value="Transaction History" style="height:100px">';
+	echo '</form>';
 	
+	echo '<form action="TransactionHistory.php" method="post">';
+	echo '<input type="submit" value="Transaction History" style="position:absolute;top:280px;left:350px;height:100px">';
+	echo '</form>';
+
 	echo "<br>";
+	echo '<form action="SearchSalesperson.php" method="post">';
 	echo '<input type="submit" value="Search Salesperson" style="margin-right:150px;height:100px">';
-	echo '<input type="submit" value="Rate Salesperson" style="height:100px">';
+	echo '</form>';
+
+	echo '<form action="RateSalesperson.php" method="post">';
+	echo '<input type="submit" value="Rate Salesperson" style="position:absolute;top:430px;left:350px;height:100px">';
+	echo '</form>';
 
 	echo '<table style="margin:-230px 0px 0px 700px;height:80px">
 		<tr>
