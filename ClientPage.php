@@ -51,20 +51,20 @@
 	</nav>";
 	
 	echo "<br>";
-	echo "<input type=submit value=Browse Products style=margin-top:40px;margin-right:170px;margin-bottom:40px;height:100px>";
-	echo "<input type=submit value=Transaction History style=height:100px>";
+	echo '<input type="submit" value="Browse Products" style="margin-top:40px; margin-right:170px; margin-bottom:40px; height:100px">';
+	echo '<input type="submit" value="Transaction History" style="height:100px">';
 	
 	echo "<br>";
-	echo "<input type=submit value=Search Salesperson style=margin-right:150px;height:100px>";
-	echo "<input type=submit value=Rate Salesperson style=height:100px>";
+	echo '<input type="submit" value="Search Salesperson" style="margin-right:150px;height:100px">';
+	echo '<input type="submit" value="Rate Salesperson" style="height:100px">';
 
-	echo "<table style=margin:-230px 0px 0px 700px;height:80px>
+	echo '<table style="margin:-230px 0px 0px 700px;height:80px">
 		<tr>
-			<td style=padding-right:75px>Best-Selling Products</td>
+			<td style="padding-right:75px">Best-Selling Products</td>
 
 		</tr>
-	</table>";
-	echo "<table style=margin:0px 0px 100px 700px>
+	</table>';
+	echo '<table style="margin:0px 0px 100px 700px">
 		<tr>
 			<td>Product1</td>
 		</tr>
@@ -75,7 +75,7 @@
 			<td>Product3</td>
 		</tr>
 
-	</table>";
+	</table>';
 
 
 
