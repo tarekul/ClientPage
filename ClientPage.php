@@ -12,8 +12,10 @@
 	    }
 	    nav{
 	    	font-size: 25px;
-	    	border:3px solid;
+	    	border:5px solid;
 	    	text-align: center;
+	    	color:black;
+	    	width: 715px;
 
 	    }
 	    input{
@@ -32,13 +34,15 @@
 </head>
 <body>
 	<?php
+
+	
 	
 	echo "<img src=http://www.clker.com/cliparts/T/S/B/Y/j/1/client.svg height=120 height=120  />";
 	
 	echo
 	"<table>
 		<tr>
-			<td>Welcome, _______________ <input type=submit value=Logout></td>
+			<td>Welcome,____________<input type=submit value=Logout></td>
 			
 		</tr>
 

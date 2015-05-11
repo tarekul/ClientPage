@@ -28,18 +28,19 @@
 		echo "</tr>";	
 		
 
-		$select='SELECT * FROM UsersWarehouse WHERE Type="Salesperson"';
+		$select='SELECT * FROM users WHERE user_type="Salesperson"';
 			$search=$connection->query($select);
 			while($row_fetch=mysqli_fetch_array($search)){
-				$lastNM=$row_fetch['LastName'];
-				$firstNM=$row_fetch['FirstName'];
-				$email=$row_fetch['Email'];
-				$rate=$row_fetch['Rating'];
+				$id=$row_fetch['id'];
+				$lastNM=$row_fetch['last_name'];
+				$firstNM=$row_fetch['first_name'];
+				$email=$row_fetch['email'];
+				$rate=$row_fetch['rating'];
 				
 			
 				echo "<tr>";
 					echo "<td>".$lastNM."</td>";
-					echo "<td><a href=SalespersonProfile.php?first=$firstNM>$firstNM</td>";
+					echo "<td><a href=Salesp_homepage.php?id=$id>$firstNM</td>";
 					echo "<td>".$email."</td>";
 					echo "<td>".$rate."</td>";
 					

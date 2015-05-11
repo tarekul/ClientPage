@@ -114,7 +114,7 @@
 			echo '</table>';
 
 			echo '<h1 style="position:absolute;top:380px;right:500px;width=500px">	Soup Products</h1>';
-			echo '<table style="position:absolute;top:480px;right:250px">';
+			echo '<table style="position:absolute;top:480px;right:0px">';
 				echo "<tr>
 						<td>Product ID</td>
 						<td>Product Name</td>
