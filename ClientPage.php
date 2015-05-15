@@ -1,3 +1,235 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<!-- Apple devices fullscreen -->
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<!-- Apple devices fullscreen -->
+	<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<title>FLAT - Blank Page</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- jQuery UI -->
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="css/plugins/jquery-ui/smoothness/jquery.ui.theme.css">
+	<!-- Theme CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Color CSS -->
+	<link rel="stylesheet" href="css/themes.css">
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+
+	<!-- Nice Scroll -->
+	<script src="js/plugins/nicescroll/jquery.nicescroll.min.js"></script>
+	<!-- imagesLoaded -->
+	<script src="js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/plugins/jquery-ui/jquery.ui.core.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.widget.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.mouse.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.resizable.min.js"></script>
+	<script src="js/plugins/jquery-ui/jquery.ui.sortable.min.js"></script>
+	<!-- slimScroll -->
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Bootbox -->
+	<script src="js/plugins/bootbox/jquery.bootbox.js"></script>
+	<!-- Bootbox -->
+	<script src="js/plugins/form/jquery.form.min.js"></script>
+	<!-- Validation -->
+	<script src="js/plugins/validation/jquery.validate.min.js"></script>
+	<script src="js/plugins/validation/additional-methods.min.js"></script>
+
+	<!-- Theme framework -->
+	<script src="js/eakroko.min.js"></script>
+	<!-- Theme scripts -->
+	<script src="js/application.min.js"></script>
+	<!-- Just for demonstration -->
+	<script src="js/demonstration.min.js"></script>
+
+	<!--[if lte IE 9]>
+		<script src="js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicon.ico" />
+	<!-- Apple devices Homescreen icon -->
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container-fluid">
+			<a href="#" id="brand">WAREHOUSE Product Ordering System</a>
+			
+			<ul class='main-nav'>
+				<li>
+					<a href="BrowseProduct.php">
+						<span>Browse Products</span>
+					</a>
+				</li>
+				<li>
+					<a href="SearchSalesperson.php">
+						<span>Search Salesperson</span>
+					</a>
+				</li>
+				<li>
+					<a href="RateSalesperson.php">
+						<span>Rate Salesperson</span>
+					</a>
+				</li>
+				
+			</ul>
+			<div class="user">  
+				<div class="dropdown">
+
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">John Doe
+						<img src="img/demo/user-avatar.jpg" alt="">
+					</a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="more-login.html">Sign out</a> 
+						</li>
+					</ul>
+				</div>
+			</div>
+	</div>
+		</div>
+	
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>Welcome!</h1>
+					</div>
+					<div class="pull-right">
+						
+						<ul class="stats">
+							
+							<li class='lightred'>
+								<i class="fa fa-calendar"></i>
+								<div class="details">
+									<span class="big"><?php echo date("m, d, Y")?></span>
+									<span>
+										<?php echo date("D"). ' ' .  date("h:i")?>
+										
+										 
+									</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+				<div class="breadcrumbs">
+					<ul>
+						<li>
+							<a href="BrowseProduct.php">Browse Products</a>
+							<i class="fa fa-angle-right"></i>
+						</li>
+						<li>
+							<a href="SearchSalesperson.php">Search Salesperson</a>
+							
+						</li>
+						
+					</ul>
+					<div class="close-bread">
+						<a href="#">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="box">
+							<div class="box-title">
+								<h3>
+									<i class="fa fa-globe"></i>
+									Top Selling items of the Most Bought Type 
+								</h3>
+							</div>
+							<div class="box-content">
+								<?php
+									$i=rand(0,2);
+									
+										if($i=0){
+										echo '<img src="http://pics.drugstore.com/prodimg/418589/220.jpg">';
+										echo '<img src="http://www.jirdc.org/training/mealtime/Nutrition/Pyramid/Fruits/apples.gif">';
+										echo '<img src="http://www.dailyperricone.com/wp-content/uploads/2010/11/Broccoli-2-505x336.jpg">';
+										}
+										if($i=1){
+											echo '<img src="http://images6.fanpop.com/image/photos/34500000/Cheesy-Yellow-Cheese-colors-34563242-424-283.jpg">';
+									
+									
+											echo '<img src="http://icons.iconarchive.com/icons/artbees/paradise-fruits/128/Banana-icon.png">';
+									
+									
+											echo '<img src="http://ohmyapt.apartmentratings.com/wp-content/uploads/2010/06/tomatoes.jpg">';
+										} 
+
+									
+									
+									
+									
+
+									
+
+							
+
+
+								?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +267,7 @@
 <body>
 	<?php
 
-	
+	/*
 	
 	echo "<img src=http://www.clker.com/cliparts/T/S/B/Y/j/1/client.svg height=120 height=120  />";
 	
@@ -108,3 +340,4 @@
 ?>
 </body>
 </html>
+-->

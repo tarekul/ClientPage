@@ -1,7 +1,8 @@
+
 <head>
 	<style>
 		body{
-			background-color: #CCFFFF;
+			background-color: #3399FF;
 		}
 	</style>
 </head>		
@@ -92,16 +93,21 @@ echo "<h3> Currently managed by: " . $supervisor_name['first_name'] . " " . $sup
 
 }
 
-		echo "<a href ='sales_complaints.php?id= " . $id . "'>Got a complaint? Click here</a><br>";
+		echo "<a href =sales_complaints.php?id=".$id.">Got a complaint? Click here</a><br>";
+
 
 ?>
 
 
 
 </body>
-</html>
+
 </form>
+
 <?php
+echo '<form action="ClientPage.php" method="post" style="position:absolute;left:100px">';
+				echo '<input type="submit" value="Home" style="height:40px">';
+				echo '</form>';
 ?>
 
 <?php

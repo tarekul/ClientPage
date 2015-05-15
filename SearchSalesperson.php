@@ -1,8 +1,9 @@
+
 <html>
 <head>
 	<style>
 		body{
-			background-color: #CCFFFF;
+			background-color:#3399FF ;
 		}
 		table{
 			border:1px solid black;
@@ -25,6 +26,8 @@
 			echo "<td>First Name</td>";
 			echo "<td>Email</td>";
 			echo "<td>Rating</td>";
+			echo "<td>Complain</td>";
+			echo "<td>Status</td>";
 		echo "</tr>";	
 		
 
@@ -36,17 +39,34 @@
 				$firstNM=$row_fetch['first_name'];
 				$email=$row_fetch['email'];
 				$rate=$row_fetch['rating'];
+				$com=$row_fetch['complaint'];
 				
 			
 				echo "<tr>";
+					
 					echo "<td>".$lastNM."</td>";
+					if($com<9){
 					echo "<td><a href=Salesp_homepage.php?id=$id>$firstNM</td>";
 					echo "<td>".$email."</td>";
 					echo "<td>".$rate."</td>";
+					echo "<td>".$com."</td>";
+					echo "<td>Available</td>";
+				}
+					else if($com>=9){
+						echo "<td>".$firstNM."</td>";
+						echo "<td>".$email."</td>";
+						echo "<td>".$rate."</td>";
+						echo "<td>".$com."</td>";
+						echo "<td>BlackListed</td>";
+					}
 					
 				echo "</tr>";	
 			}		
 			echo "</table>";	
+
+			echo '<form action="ClientPage.php" method="post" style="position:absolute;left:100px">';
+				echo '<input type="submit" value="Home" style="height:40px">';
+				echo '</form>';
 
 
 
